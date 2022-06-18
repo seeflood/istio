@@ -43,12 +43,12 @@ done
 printf '\n'
 
 plugin=metadata_exchange
-WASM_URL=${ISTIO_ENVOY_BASE_URL}/${plugin}-${ISTIO_ENVOY_VERSION}.wasm
-printf "Verifying %s is available\n" "$WASM_URL"
-until curl --output /dev/null --silent --head --fail "$WASM_URL"; do
-    printf '.'
-    sleep $SLEEP_TIME
-done
+#WASM_URL=${ISTIO_ENVOY_BASE_URL}/${plugin}-${ISTIO_ENVOY_VERSION}.wasm
+#printf "Verifying %s is available\n" "$WASM_URL"
+#until curl --output /dev/null --silent --head --fail "$WASM_URL"; do
+#    printf '.'
+#    sleep $SLEEP_TIME
+#done
 printf '\n'
 
 # Update the dependency in istio.deps
